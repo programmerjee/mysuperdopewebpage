@@ -54,12 +54,7 @@ h1 {
   border: 1px #3e4444;
 }
 
-#hello-world {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.contact me {
+.contact-me {
   grid-column: 3;
   text-align: center;
 }
