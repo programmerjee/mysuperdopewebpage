@@ -1,0 +1,6 @@
+# about me container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: auto 100px;
+  border: solid 2px green;
+}
