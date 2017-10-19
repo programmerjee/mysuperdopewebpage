@@ -1,13 +1,18 @@
+.menu {
+  text-align: right;
+}
+.menu ul{
+  list-style-type: none;
+}
+.wrapper{
+    display: grid;
+  grid-template-columns: 35% 30% 35%
+  grid-gap: 5px;
+  border: 1px;
+}
 header{
 	background-color: #bdcebe;
 }
 h1 {
 	color: #3e4444;
-
-}
-# about me container {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-template-columns: auto 100px;
-  border: solid 2px black;
 }
