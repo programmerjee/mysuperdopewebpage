@@ -1,81 +1,86 @@
 header{
-	background-color: #b9b0b0;
-  margin: 0em;
+	background-image: url("https://github.com/programmerjee/programmerjee.github.io/blob/master/banner.jpg?raw=true");
+	background-size: 100% 100%;
+	margin: 0em;
 }
 img {
-  max-width:100%;
+	max-width:100%;
 }
 .menu {
-  display: flex;
-  justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 .menu ul{
-  list-style-type: none;
+	list-style-type: none;
 }
 h1 {
-	color: #3e4444;
+	color: darkslategray;
+	text-shadow: 2px 2px white;
+}
+a:link {
+	color: white;
 }
 a {
-  transition: margin-right 4s;
+	transition: margin-right 4s;
 }
 
 a:hover {
- color: midnightblue;
+	color: #b9b0b0;
 }
 #container {
-  display: grid;
-  grid-template-rows: 30% 30% 20%;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: solid 1px gray;
-  background-color: white;
-  margin: 10px;
+	display: grid;
+	grid-template-rows: 30% 30% 20%;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: solid 1px gray;
+	background-color: white;
+	margin: 10px;
 }
 
 .bio {
-  grid-column: 1 / 3;
-  grid-row: 1;
+	grid-column: 1 / 3;
+	grid-row: 1;
 }
 
 #my-pic {
-  grid-column: 2 / 3;
-  width: 100%;
-  border: 1px white;
+	grid-column: 2 / 3;
+	width: 100%;
+	border: 1px white;
 }
 .bio {
-  grid-column-start:1;
-  grid-column-end: 2;
-  border: 1px white;
-  text-align: center;
-  
+	grid-column-start:1;
+	grid-column-end: 2;
+	border: 1px white;
+	text-align: center;
+	
 }
 .skills {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  border: 1px white;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	border: 1px white;
 }
 
 .projects {
-  display: grid;
-  grid-row: 10em 50em;
-  grid-column-start: 1;
-  grid-column-end: 4;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 90%;
+	display: grid;
+	grid-row: 10em 50em;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 90%;
 }
 .projects h2{
-  text-align: center;
-  grid-column: 1/5;
+	text-align: center;
+	grid-column: 1/5;
 }
 
 .projects article {
-  border: 1px #3e4444;
+	border: 1px #3e4444;
 }
 footer {
-  text-align: center;
-  background-color: #b9b0b0;
-  color: #563f46
+	text-align: center;
+	background-color: #b9b0b0;
+	color: #563f46
 }
 * {
-  font-family: "Arial";
-  margin: 0.5em;
+	font-family: "Arial";
+	margin: 0.5em;
 }
