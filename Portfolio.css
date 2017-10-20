@@ -1,5 +1,6 @@
 header{
-	background-color: #bdcebe;
+	background-color: #b9b0b0;
+  margin: 0em;
 }
 img {
   max-width:100%;
@@ -14,11 +15,16 @@ img {
 h1 {
 	color: #3e4444;
 }
+
+a:hover {
+ color: midnightblue;
+}
 #container {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 30% 30% 20%;
   grid-template-columns: 1fr 1fr 1fr;
   border: solid 1px gray;
+  background-color: white;
   margin: 10px;
 }
 
@@ -33,12 +39,16 @@ h1 {
   border: 1px white;
 }
 .bio {
-  grid-column-start: 1;
+  grid-column-start:1;
   grid-column-end: 2;
+  border: 1px white;
+  text-align: center;
+  
 }
 .skills {
   grid-column-start: 3;
   grid-column-end: 4;
+  border: 1px white;
 }
 
 .projects {
@@ -64,4 +74,5 @@ footer {
 }
 * {
   font-family: "Arial";
+  margin: 0.5em;
 }
