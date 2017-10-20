@@ -57,10 +57,11 @@ h1 {
 .projects article {
   border: 1px #3e4444;
 }
-
-.contact me {
-  grid-column: 1/4;
+footer {
   text-align: center;
   background-color: #b9b0b0;
   color: #563f46
+}
+* {
+  font-family: "Arial";
 }
