@@ -1,99 +1,95 @@
-header{
-	 background-image: url("https://github.com/programmerjee/programmerjee.github.io/blob/master/banner.jpg?raw=true");
-  background-size: 100% 100%;
-  margin: 0em;
+header {
+    background-image: url("https://github.com/programmerjee/programmerjee.github.io/blob/master/banner.jpg?raw=true");
+    background-size: 100% 100%;
+    margin: 0em;
 }
 img {
-  max-width:100%;
+    max-width: 100%;
 }
 .menu {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 h1 {
-	color: darkslategray;
-  text-shadow: 2px 2px white;
-  text-align:center;
-  font-size: 40px;
+    color: darkslategray;
+    text-shadow: 2px 2px white;
+    text-align: center;
+    font-size: 40px;
 }
 h2 {
-  color: darkslategray;
-  font-size: 22px;
+    color: darkslategray;
+    font-size: 22px;
 }
 h3 {
-  color: darkslategray;
-  font-size: 20px;
+    color: darkslategray;
+    font-size: 20px;
 }
 .menu a:link {
-  color: white;
+    color: white;
 }
-
 .menu a:hover {
- color: #b9b0b0;
+    color: #b9b0b0;
 }
-.menu ul{
-  list-style-type: none;
-  list-style-image: none;
+.menu ul {
+    list-style-type: none;
+    list-style-image: none;
 }
 ul {
-  list-style-image: url('https://github.com/programmerjee/programmerjee.github.io/blob/master/medium%20code%20block.png?raw=true');
+    list-style-image: url('https://github.com/programmerjee/programmerjee.github.io/blob/master/medium%20code%20block.png?raw=true');
 }
 #container {
-  display: grid;
-  grid-template-rows: 25% 35% 20%;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: solid 1px gray;
-  background-color: white;
-  margin: 10px;
+    display: grid;
+    grid-template-rows: 25% 35% 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid 1px gray;
+    background-color: white;
+    margin: 10px;
 }
-
 .bio {
-  grid-row: 1;
-  grid-column-start:1;
-  grid-column-end: 2;
-  border: 1px white;
-  text-align: center;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 1px white;
+    text-align: center;
 }
-
 #my-pic {
-  grid-column: 2 / 3;
-  width: 100%;
-  border-radius: 50%;
-  overflow:hidden;
+    grid-column: 2 / 3;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 p {
-  font-size: 20px;
+    font-size: 20px;
 }
 .skills {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  border: 1px white;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border: 1px white;
 }
-
 .projects {
-  display: grid;
-  grid-row: 10em 50em;
-  grid-column-start: 1;
-  grid-column-end: 4;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 90%;
+    display: grid;
+    grid-row: 10em 50em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
 }
-.projects h2{
-  text-align: center;
-  grid-column: 1/5;
+.projects h2 {
+    text-align: center;
+    grid-column: 1/5;
 }
 .projects p {
-  font-size:17px;
+    font-size: 17px;
 }
 .projects article {
-  border: 1px #3e4444;
+    border: 1px #3e4444;
 }
 footer {
-  text-align: center;
-  background-color: #b9b0b0;
-  color: #563f46
+    text-align: center;
+    background-color: #b9b0b0;
+    color: #563f46
 }
 * {
-  font-family: "Arial";
-  margin: 0.5em;
+    font-family: "Arial";
+    margin: 0.5em;
 }
