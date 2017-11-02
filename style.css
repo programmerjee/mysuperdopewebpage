@@ -45,7 +45,7 @@ ul {
     position: relative;
     font-size: 5em;
     line-height: 1;
-    color: #9e9ba4;
+    color: white;
     display: inline-block;
 }
 .name--angela {
@@ -83,7 +83,7 @@ ul {
     position: absolute;
     z-index: 2;
     overflow: hidden;
-    color: #424242;
+    color: white;
     white-space: nowrap;
     width: 0%;
     transition: width 0.4s 0.3s;
