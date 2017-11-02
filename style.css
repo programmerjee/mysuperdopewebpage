@@ -39,28 +39,28 @@ h3 {
 ul {
     list-style-image: url('https://github.com/programmerjee/programmerjee.github.io/blob/master/medium%20code%20block.png?raw=true');
 }
-.link {
+.name {
     outline: none;
     text-decoration: none;
     position: relative;
-    font-size: 8em;
+    font-size: 5em;
     line-height: 1;
     color: #9e9ba4;
     display: inline-block;
 }
-.link--angela {
+.name--angela {
     text-transform: uppercase;
     font-weight: 900;
     overflow: hidden;
     line-height: 0.75;
+    color: #008080;
+}
+
+.name--angela:hover {
     color: #b2b0a9;
 }
 
-.link--angela:hover {
-    color: #b2b0a9;
-}
-
-.link--angela::after {
+.name--angela::after {
     content: '';
     position: absolute;gi
     height: 16px;
@@ -74,11 +74,11 @@ ul {
     transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
-.link--angela:hover::after {
+.name--angela:hover::after {
     transform: translate3d(100%,0,0);
 }
 
-.link--angela::before {
+.name--angela::before {
     content: attr(data-letters);
     position: absolute;
     z-index: 2;
@@ -89,7 +89,7 @@ ul {
     transition: width 0.4s 0.3s;
 }
 
-.link--angela:hover::before {
+.name--angela:hover::before {
     width: 100%;
 }
 #container {
