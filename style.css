@@ -40,7 +40,7 @@ ul {
 }
 #container {
     display: grid;
-    grid-template-rows: 20% 40% 40%;
+    grid-template-rows: 30% 70%;
     grid-template-columns: 1fr 1fr 1fr;
     border: solid 1px gray;
     background-color: white;
@@ -59,15 +59,15 @@ ul {
     border-radius: 50%;
     overflow: hidden;
 }
+.skills {
+    grid-column: 3/4;
+    border: 1px white;
+}
 p {
     font-size: 20px;
 }
-.skills {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    border: 1px white;
-}
 .projects {
+    grid-row-start: 2;
     display: grid;
     grid-row: 10em 50em;
     grid-column-start: 1;
