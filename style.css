@@ -12,12 +12,6 @@ img {
     display: flex;
     justify-content: flex-end;
 }
-h1 {
-    color: darkslategray;
-    text-shadow: 2px 2px white;
-    text-align: center;
-    font-size: 40px;
-}
 h2 {
     color: darkslategray;
     font-size: 22px;
@@ -42,11 +36,10 @@ ul {
 .name {
     outline: none;
     text-decoration: none;
-    position: relative;
-    font-size: 5em;
+    text-align:center;
+    font-size: 40px;
     line-height: 1;
     color: white;
-    display: inline-block;
 }
 .name--angela {
     text-transform: uppercase;
