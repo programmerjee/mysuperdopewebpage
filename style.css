@@ -8,10 +8,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-.menu {
-    display: flex;
-    justify-content: flex-end;
-}
 h2 {
     color: darkslategray;
     font-size: 22px;
@@ -20,16 +16,23 @@ h3 {
     color: darkslategray;
     font-size: 20px;
 }
-.menu a:link {
-    color: white;
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
 }
-.menu a:hover {
-    color: #b9b0b0;
+.menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.menu ul {
-    list-style-type: none;
-    list-style-image: none;
+.menua:hover, {
+  background-color: red;
 }
+
 ul {
     list-style-image: url('https://github.com/programmerjee/programmerjee.github.io/blob/master/medium%20code%20block.png?raw=true');
 }
