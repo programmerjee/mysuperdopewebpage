@@ -19,7 +19,6 @@ h3 {
 .menu {
   overflow: hidden;
   background-color: #333;
-  font-family: Arial;
 }
 .menu a {
   float: left;
