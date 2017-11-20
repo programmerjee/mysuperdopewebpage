@@ -29,18 +29,18 @@ h3 {
 }
 
 .menu li a {
+    text-decoration: none;
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
+    padding: 8px 8px;
 }
 
 .menu li a:hover {
     background-color: #111;
 }
 
-ul {
+.bullet-list ul{
     list-style-image: url('https://github.com/programmerjee/programmerjee.github.io/blob/master/medium%20code%20block.png?raw=true');
 }
 .name {
