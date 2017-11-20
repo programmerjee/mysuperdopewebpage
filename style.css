@@ -16,6 +16,10 @@ h3 {
     color: darkslategray;
     font-size: 20px;
 }
+.menu {
+    margin: 0;
+    padding: 0;
+}
 .menu ul {
     list-style-type: none;
     margin: 0;
