@@ -22,10 +22,10 @@ jQuery.fn.loadRepositories = function(username) {
      });
     function sortByDate(repos) {
         repos.sort(function(a,b) {
-            if(a.date < b.date) {
+            if(a.updated_at < b.updated_at) {
                 return -1;
             }
-        } return a.date - b.date;
+        } return a.updated_at - b.updated_at;
             });
         }
     };
