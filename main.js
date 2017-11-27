@@ -23,6 +23,9 @@ jQuery.fn.loadRepositories = function(username) {
       
    function sortByName(repos) {
         repos.sort(function(a,b) {
+            if(a.name < b.name) {
+                return -1;
+            }
         return a.name - b.name;
        });
     }
