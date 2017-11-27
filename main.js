@@ -1,4 +1,4 @@
-jjQuery.githubUser = function(username, callback) {
+jQuery.githubUser = function(username, callback) {
    jQuery.getJSON('https://api.github.com/users/'+username+'/repos?callback=?',callback)
 }
 
@@ -16,7 +16,7 @@ jQuery.fn.loadRepositories = function(username) {
             if (this.name != (username.toLowerCase()+'.github.com')) {
                 list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
                 list.append('<dd>' + '<img src ="' + this.description + '" width="100"></img>' +'</dd>');
-                list.append('<dd>' + this.updated_at + '</dd>');
+                list.append("Updated at: " +'<dd>' + this.updated_at + '</dd>');
             }
         });      
      });
