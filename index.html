@@ -10,13 +10,13 @@
 
 <body>
     <header>
-        <a class="name name--angela" href="#" data-letters="Angela Mukherjee">Angela Mukherjee</a>
-        <nav class="menu">
+         <nav class="menu">
                <ul><li><a href="#About Me">About Me</a></li>
              <li> <a href="#Projects">Projects</a></li>
         <li><a href="#Contact Me">Contact Me</a></li>
     </ul>
         </nav>
+        <a class="name name--angela" href="#" data-letters="Angela Mukherjee">Angela Mukherjee</a>
     </header>
     <div id="container">
         <img id="my-pic" src="https://github.com/programmerjee/programmerjee.github.io/blob/master/Bollywood%20Tree%20Pic.jpg?raw=true" />
@@ -49,70 +49,8 @@
         <section class="projects">
             <a name="Projects"></a>
             <h2>Projects</h2>
-            <article id="Fortune Teller">
-                <h3>Fortune Teller</h3>
-                <p>I developed a Java console application that predicts the user’s fortune based on data received from the user.</p>
-                <a href="https://github.com/programmerjee/fortune-teller" title="Fortune Teller" target="_blank"> 
-                    <img src="https://github.com/programmerjee/programmerjee.github.io/blob/master/FortuneTeller.JPG?raw=true" alt="Fortune Teller Snapshot">
-                </a>
-                <p>Skills used:
-                    <ul class="bullet-list">
-                        <li>Variables and Basic Types</li>
-                        <li>Operators and Expressions</li>
-                        <li>Conditionals</li>
-                        <li>Strings</li>
-                    </ul>
-                </p>
-            </article>
-            </article>
-            <article id="virtual-pet">
-                <h3>Virtual Pet</h3>
-                <p>I created a Java console application where the user can play with, feed, bathe, and water a virtual pet.</p>
-                <a href="https://github.com/programmerjee/virtual-pet" title="Virtual Pet" target="_blank">
-                    <img src="https://github.com/programmerjee/programmerjee.github.io/blob/master/VirtualPet.JPG?raw=true" alt="Virtual Pet Snapshot">
-                </a>
-                <p>Skills Used:
-                    <ul class="bullet-list">
-                        <li>Object Oriented Programming</li>
-                        <li>Loops</li>
-                        <li>Instance variables</li>
-                        <li>Method Implementation</li>
-                    </ul>
-                </p>
-            </article>
-            </article>
-            <article id="virtual-pet-shelter">
-                <h3>Virtual Pet Shelter</h3>
-                <p>
-                    I expanded upon Virtual Pet, allowing users to care for multiple pets and adopt/add pets to the shelter.
-                </p>
-                <a href="https://github.com/programmerjee/virtual-pet-shelter" title="Virtual Pet Shelter" target="_blank">
-                    <img src="https://github.com/programmerjee/programmerjee.github.io/blob/master/VirtualPetShelter.JPG?raw=true" alt="Virtual Pet Shelter Snapshot">
-                </a>
-                <p>Skills used:
-                    <ul class="bullet-list">
-                        <li>Collections</li>
-                        <li>Constructors</li>
-                        <li>Loops</li>
-                    </ul>
-                </p>
-            </article>
-            <article id="virtual-pets-amok">
-                <h3>Virtual Pets Amok</h3>
-                <p>I expanded upon the Virtual Pet Shelter to allow the user to care for pets with different needs.</p>
-                <a href="https://github.com/programmerjee/virtual-pets-amok" title="Virtual Pets Amok" target="_blank">
-                    <img src="https://github.com/programmerjee/programmerjee.github.io/blob/master/VirtualPetsAmok.JPG?raw=true" alt="Virtual Pets Amok Snapshot">
-                </a>
-                <p>Skills used:
-                    <ul class="bullet-list">
-                        <li>Encapsulation</li>
-                        <li>Inheritance</li>
-                        <li>Interfaces</li>
-                        <li>Abstraction</li>
-                        <li>Test Driven Development (TDD)</li>
-                    </ul>
-                </p>
-            </article>
+             <div id="my-github-projects"/>
+            </div>
         </section>
     </div>
     </main>
@@ -126,6 +64,12 @@
             </p>
         </div>
     </footer>
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/javascripts/git.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript">
+    $(function() {
+        $("#my-github-projects").loadRepositories("programmerjee");
+    });
+</script>
 </body>
-
-</html>=
+</html>
