@@ -21,8 +21,10 @@ jQuery.fn.loadRepositories = function(username) {
         });      
      });
       function sortByDate(repos) {
-        repos.sort(function(a,b){
-  return new Date(b.date) - new Date(a.date);
+       repos.sort(function(a,b){
+var c = new Date(a.date);
+var d = new Date(b.date);
+return c-d;
 });
     }
 };
