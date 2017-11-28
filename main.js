@@ -8,7 +8,7 @@ jQuery.fn.loadRepositories = function(username) {
     var target = this;
     $.githubUser(username, function(data) {
         var repos = data.data;
-        sortByName(repos);    
+        sortByDate(repos);    
    
         var list = $('<dl/>');
         target.empty().append(list);
@@ -20,6 +20,12 @@ jQuery.fn.loadRepositories = function(username) {
             }
         });      
      });
+      function sortByDate(repos) {
+        repos.sort(function(a,b){
+  return new Date(b.date) - new Date(a.date);
+});
+    }
+};
       
    function sortByName(repos) {
         repos.sort(function(a,b) {
