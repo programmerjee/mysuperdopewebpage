@@ -25,11 +25,11 @@ jQuery.fn.loadRepositories = function(username) {
     a = new Date(a.updated_at);
     b = new Date(b.updated_at);
     return a>b ? -1 : a<b ? 1 : 0;
-});
+  });
     }
-}; 
+};
       
-   function sortByName(repos) {
+ /*  function sortByName(repos) {
         repos.sort(function(a,b) {
             if(a.name < b.name) {
                 return -1;
@@ -37,4 +37,4 @@ jQuery.fn.loadRepositories = function(username) {
         return a.name - b.name;
        });
     }
-};
+}; */
