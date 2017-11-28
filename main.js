@@ -20,14 +20,14 @@ jQuery.fn.loadRepositories = function(username) {
             }
         });      
      });
-      function sortByDate(repos) {
-       repos.sort(function(a,b){
-var c = new Date(a.date);
-var d = new Date(b.date);
-return c-d;
+     function sortByDate(repos) {
+        repos.sort(function(a, b) {
+    a = new Date(a.updated_at);
+    b = new Date(b.updated_at);
+    return a>b ? -1 : a<b ? 1 : 0;
 });
     }
-};
+}; 
       
    function sortByName(repos) {
         repos.sort(function(a,b) {
