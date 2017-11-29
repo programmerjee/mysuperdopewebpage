@@ -18,7 +18,7 @@
         </nav>
         <a class="name name--angela" href="#" data-letters="Angela Mukherjee">Angela Mukherjee</a>
     </header>
-    <div id="container">
+    <div class="bio-grid">
         <img id="my-pic" src="images/Bollywood Tree Pic.jpg">
 
         <section class="bio">
@@ -44,16 +44,44 @@
                 <li>Spring MVC</li>
                 <li>Source Control/Git</li>
                 <li>Structured Query Language (SQL)</li>
+                <li>PHP</li>
             </ul>
         </section>
-        <section class="projects">
-            <a name="Projects"></a>
-            <h2>Projects</h2>
+    </div>
+        <section class="projects-grid">
+            <h2>Recent Projects</h2>
+            <article class="first-images">
+            <a href="https://github.com/programmerjee/babysitter"><img src="images/babysitter-test.jpg" alt="Babysitter Test Driven Development"></a>
+            <a href="https://github.com/programmerjee/full-stack-review-site"><img src="images/RestaurantReviewsCode.jpg" alt="Restaurant Reviews Code"></a>
+           <a href="https://github.com/programmerjee/full-stack-review-site"> <img src="images/RestaurantReviewsPic.jpg" alt="Restaurant Reviews Site"></a>
+            <a href="https://github.com/programmerjee/virtual-pets-amok"><img src="images/VirtualPetsAmok.jpg" alt="Virtual Pets Amok"></a>
+        </article>
              <div id="my-github-projects"></div>
+             <article class="second-images">
+            <a href="https://github.com/programmerjee/virtual-pet"><img src="images/VirtualPet.jpg" alt="Virtual Pet"></a>
+            <a href="https://github.com/programmerjee/virtual-pet-shelter"><img src="images/VirtualPetShelter.jpg" alt="Virtual Pet Shelter"></a>
+             <a href="https://github.com/programmerjee/reviews-site"><img src="images/cheap-food.jpg" alt="Food Review Site"></a>
+            <a href="https://github.com/programmerjee/reviews-site"><img src="images/FoodReview.jpg" alt="Food Review Site"></a>
+        </article>
         </section>
     </div>
-    </main>
-    </div>
+    <div class="form">
+        <form 
+  alert="submit()">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="I would like to hire you for my next project..." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
     <footer>
         <div class="contact me">
             <a name="Contact Me"></a>
@@ -69,6 +97,9 @@
     $(function() {
         $("#my-github-projects").loadRepositories("programmerjee");
     });
+    function submit() {
+    alert("Our server is down.  Please email angelarowe7@gmail.com directly.");
+}
 </script>
 </body>
 </html>

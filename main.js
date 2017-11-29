@@ -15,9 +15,10 @@ jQuery.fn.loadRepositories = function(username) {
         var newRepos = $(repos).slice(0,6);
         $(newRepos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com')) {
-                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
+                var myDate = new Date(this.updated_at);
+                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'"><strong>' + this.name + '</strong></a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
                 list.append('<dd>' + this.description +'</dd>');
-                list.append('<dd>' + this.updated_at + '</dd>');
+                list.append("<em>Updated at: " + '<dd>' + (myDate.getMonth() + 1) + '/'+ myDate.getDate() + '/' + myDate.getFullYear()  + '</dd></em>');
             }
         });      
      });
