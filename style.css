@@ -44,7 +44,7 @@ h3 {
     background-color: #111;
 }
 
-.bullet-list ul{
+.bullet-list {
     list-style-image: url('images/medium-code-block.png');
 }
 .name {
@@ -133,6 +133,19 @@ p {
     grid-template-rows: 20% 80%;
     background-color: white;
     margin: 10px;
+    background-image: url("images/turquoise-blue-abstract.jpg");
+}
+.projects-grid h2 {
+    color: #F8F8FF;
+}
+.projects-grid {
+    color: #D3D3D3;
+}
+.projects-grid a {
+    color:  #87CEEB;
+}
+.projects-grid a:visited {
+    color: #D8BFD8;
 }
 .first-images {
     grid-row: 2;
@@ -153,6 +166,9 @@ p {
     grid-row:2;
     grid-column: 3/4;
     border: 1px white;
+}
+.second-images img {
+    margin-right: 1em;
 }
 .projects-grid h2 {
     text-align: center;
@@ -183,7 +199,7 @@ input[type=text], select, textarea {
     resize: vertical
 }
 
-button[type=submit] {
+input[type=submit] {
     background-color: #7a6c6c;
     color: white;
     padding: 12px 20px;
@@ -192,7 +208,7 @@ button[type=submit] {
     cursor: pointer;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #b9b0b0;
 }
 .form {
