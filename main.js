@@ -12,7 +12,7 @@ jQuery.fn.loadRepositories = function(username) {
    
         var list = $('<dl/>');
         target.empty().append(list);
-        var newRepos = $(repos).slice(0,6);
+        var newRepos = $(repos).slice(0,3);
         $(newRepos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com')) {
                 var myDate = new Date(this.updated_at);
